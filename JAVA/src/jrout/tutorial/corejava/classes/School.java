@@ -4,19 +4,22 @@ public class School {
 
 	public static void main(String[] args) {
 		Student rahul = new Student("Rahul",4);
+		rahul.setGrade(-1);
 		
-		System.out.println(rahul.name);
+		//System.out.println(rahul.name);
+		System.out.println(rahul.getName());
 //		rahul.name = "Rahul";
-		System.out.println(rahul.name.toUpperCase());
+		System.out.println(rahul.getName().toUpperCase());
 //		rahul.grade = 4;
-		rahul.score = 90;
+//		rahul.score = 90;
+		rahul.setScore(90);
 		
 		Address rahulAddress = new Address();
 		rahulAddress.address1 = "12 Hill Street";
 		rahulAddress.address2 = "Room 21";
 		rahulAddress.address3 = "33333";
 		
-		rahul.address = rahulAddress;
+		rahul.setAddress(rahulAddress);//address = rahulAddress;
 		rahul.printMessage();
 		
 		// if he is more than 4th grade and score is more than 55 then say very well done Rahul.
@@ -41,6 +44,8 @@ public class School {
 			System.out.println("Very well done Tushar");
 		}
 		*/
+		
+		
 	}
 
 }
